@@ -1,0 +1,45 @@
+﻿
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+      <modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.atguigu.maven</groupId>
+     <artifactId>Hello</artifactId> 
+         
+         <version>0.0.1-RELEASES</version>    
+             <!--  RELEASES  SNAPSHOT-->
+ <name>Hello</name> 
+
+ 	
+
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+<version>4.0</version>
+
+ 
+
+		</dependency>
+     
+    
+     
+	</dependencies>
+	
+	<distributionManagement>
+    <repository>
+        <id>release</id>
+        <url>http://192.168.80.139:8081/nexus/content/repositories/releases/</url>
+    </repository>
+
+    <snapshotRepository>
+        <id>snapshot</id>
+        <url>http://192.168.80.139:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
+	
+	
+</project>
