@@ -6,6 +6,7 @@ public class HelloTest {
 	public void testHello(){
 		Hello hello = new Hello();
 		String results = hello.sayHello("litingwei");
+		String results1 = hello.sayHello("litingwei");
 		assertEquals("Hello litingwei!",results);	
 	}
 }
